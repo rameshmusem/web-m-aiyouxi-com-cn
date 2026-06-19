@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rameshmusem.github.io/web-m-aiyouxi-com-cn/sitemap.xml

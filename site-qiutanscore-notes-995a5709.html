@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+  <title>球探 · 简明使用说明</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #f5efe9;
+      font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+      color: #2c2a28;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .page {
+      max-width: 780px;
+      width: 100%;
+      background: #fffaf5;
+      padding: 3rem 2.2rem;
+      border-radius: 30px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.04), 0 2px 6px rgba(0,0,0,0.02);
+      transition: box-shadow 0.2s;
+    }
+    @media (max-width: 520px) {
+      body { padding: 1rem 0.6rem; }
+      .page { padding: 2rem 1.2rem; border-radius: 20px; }
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #1f1d1a;
+      margin-bottom: 0.35rem;
+      border-left: 4px solid #b99b7b;
+      padding-left: 1rem;
+    }
+    .subhead {
+      font-size: 1rem;
+      color: #7b6f63;
+      margin-bottom: 2.8rem;
+      padding-left: 1rem;
+      border-left: 4px solid #b99b7b;
+      font-style: italic;
+    }
+    .summary-box {
+      background: #ede6db;
+      padding: 1.2rem 1.6rem;
+      border-radius: 18px;
+      margin-bottom: 2.2rem;
+      font-size: 1rem;
+      border-left: 6px solid #be9f81;
+      color: #2c2722;
+    }
+    .summary-box strong {
+      font-weight: 600;
+      color: #1f1a16;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #2e2a26;
+      border-bottom: 1px solid #ddd6cd;
+      padding-bottom: 0.25rem;
+    }
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+    }
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.4rem 0 2rem;
+    }
+    .highlight-item {
+      flex: 1 1 180px;
+      background: #f2ebe2;
+      border-radius: 16px;
+      padding: 1rem 1.2rem;
+      border: 1px solid #e0d6ca;
+    }
+    .highlight-item h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #413a33;
+      margin-bottom: 0.3rem;
+    }
+    .highlight-item p {
+      font-size: 0.92rem;
+      color: #504840;
+      margin-bottom: 0;
+    }
+    .tip-box {
+      background: #e7dfd4;
+      border-radius: 16px;
+      padding: 1.3rem 1.6rem;
+      margin: 2rem 0;
+      border-left: 6px solid #caad92;
+      font-size: 0.96rem;
+    }
+    .tip-box strong {
+      color: #3b322b;
+    }
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+    .faq-item h4 {
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: #38302a;
+      margin-bottom: 0.2rem;
+    }
+    .faq-item p {
+      margin-left: 0.6rem;
+      color: #4d443b;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .disclaimer {
+      margin-top: 2.5rem;
+      padding: 1.2rem 1.6rem;
+      background: #f1ebe3;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #5e5349;
+      border: 1px solid #d6cdc0;
+    }
+    .disclaimer a {
+      color: #876b53;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    .disclaimer a:hover {
+      color: #4f3b2e;
+      background: #e5d9cd;
+      text-decoration: none;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ded3c8;
+      margin: 2rem 0 1rem;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #857a6f;
+      margin-top: 0.8rem;
+    }
+    a {
+      color: #7c624c;
+      transition: background 0.15s, color 0.15s;
+    }
+    a:focus-visible {
+      outline: 2px solid #a68b72;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>球探 · 简明指南</h1>
+  <div class="subhead">数据观察与信息参考 · 使用前提醒</div>
+
+  <div class="summary-box">
+    <strong>一句话摘要</strong> —— <a href="https://site-qiutanscore.com">球探</a> 是一个提供实况数据与赛事集合的观察平台。本页整理它的使用要点、功能亮点和日常建议，方便你快速上手，同时保持理性预期。
+  </div>
+
+  <p>无论你是刚开始关注体育数据，还是已经习惯用信息辅助判断，先花两分钟了解这个工具的气质和边界，会更有帮助。下面从几个最常被问到的方面展开。</p>
+
+  <h2>主要特点</h2>
+  <div class="highlights">
+    <div class="highlight-item">
+      <h3>覆盖面较广</h3>
+      <p>涵盖多个联赛、杯赛和实时走势，数据更新节奏稳定，适合日常浏览与对照。</p>
+    </div>
+    <div class="highlight-item">
+      <h3>界面去装饰</h3>
+      <p>信息密度较高，重点突出比分、时间和关键事件，减少视觉干扰。</p>
+    </div>
+    <div class="highlight-item">
+      <h3>适配多端</h3>
+      <p>不论在电脑或手机上，页面布局都能较快适应，方便随时查看。</p>
+    </div>
+  </div>
+
+  <h2>使用场景参考</h2>
+  <p>适合在赛前快速查阅对阵、在比赛进行时跟进实时动态，或者在赛后回顾数据脉络。不建议仅凭单一场次或短期波动做出决定，数据是参考的一部分，不是全部。<br>将 <a href="https://site-qiutanscore.com">球探</a> 当作信息面板之一，配合其他来源交叉验证，是更稳妥的使用习惯。</p>
+
+  <div class="tip-box">
+    <strong>💡 访问提醒</strong><br>
+    使用过程中留意页面加载状态，网络波动时数据可能延迟。尽量在稳定的环境下查看。如果遇到显示异常，可尝试刷新或稍后再试。本平台不提供决策建议，所有内容仅供参考。
+  </div>
+
+  <h2>常见问题摘要</h2>
+  <div class="faq-item">
+    <h4>数据来源可靠吗？</h4>
+    <p>平台数据来自公开赛事信息，经过聚合展示，但不保证绝对实时或零误差。重要判断前建议多方核对。</p>
+  </div>
+  <div class="faq-item">
+    <h4>是否需要注册？</h4>
+    <p>基础浏览和数据查看通常无需注册。某些额外功能或个性化设置可能需要账号，以页面实际提示为准。</p>
+  </div>
+  <div class="faq-item">
+    <h4>移动端体验如何？</h4>
+    <p>响应式设计，手机浏览器可直接访问。横屏下显示内容更完整，推荐使用现代浏览器以获得最佳效果。</p>
+  </div>
+  <div class="faq-item">
+    <h4>有无使用成本？</h4>
+    <p>当前核心功能免费开放。如未来有增值服务，以官方说明为准。本页仅介绍现状。</p>
+  </div>
+
+  <hr>
+
+  <div class="disclaimer">
+    <strong>⚠️ 克制的使用说明</strong><br>
+    本文档为独立整理的信息介绍，不隶属于任何机构。所有内容基于公开资料和通用使用体验编写，不构成任何形式承诺或诱导。请根据自身需求合理使用 <a href="https://site-qiutanscore.com">球探</a>，并对自己的判断负责。<br>
+    <span style="display:inline-block; margin-top:0.4rem; font-size:0.85rem; color:#6f6257;">—— 保持好奇，保持清醒。</span>
+  </div>
+
+  <div class="footer-note">
+    &nbsp;
+  </div>
+</div>
+</body>
+</html>

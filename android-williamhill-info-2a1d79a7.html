@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>威廉希尔 — 再次发现，持续关注</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fcfcfc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1e1e2a;
+      line-height: 1.6;
+      padding: 0 1.5rem;
+    }
+
+    .page {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 2.2rem 0 4rem;
+    }
+
+    /* 极简导航 */
+    .top-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0 2.5rem;
+      border-bottom: 1px solid #eaeef2;
+    }
+
+    .top-nav .brand {
+      font-size: 1.35rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #1e1e2a;
+      text-decoration: none;
+    }
+
+    .top-nav .brand small {
+      font-weight: 300;
+      color: #6a7a86;
+      font-size: 0.85rem;
+      margin-left: 0.4rem;
+    }
+
+    .top-nav .bookmark-hint {
+      font-size: 0.8rem;
+      background: #f0f3f6;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      color: #3a4b56;
+      letter-spacing: 0.01em;
+    }
+
+    /* hero */
+    .hero {
+      margin: 3rem 0 2.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 450;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: #14141e;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #3b4a58;
+      max-width: 640px;
+    }
+
+    .hero p a {
+      color: #1e3d5e;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #bcccd9;
+      transition: border-color 0.2s;
+    }
+
+    .hero p a:hover {
+      border-bottom-color: #1e3d5e;
+    }
+
+    /* 卡片场景区 */
+    .scenes {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+      margin: 3.2rem 0 3.5rem;
+    }
+
+    .scene-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.6rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.03);
+      border: 1px solid #eaedf0;
+      transition: box-shadow 0.2s;
+    }
+
+    .scene-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+
+    .scene-card h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #1a2631;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .scene-card .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      background: #eef2f6;
+      color: #415a6b;
+      padding: 0.1rem 0.7rem;
+      border-radius: 12px;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .scene-card p {
+      font-size: 0.95rem;
+      color: #2f3e4b;
+      margin-bottom: 0.3rem;
+    }
+
+    .scene-card .link-inline {
+      margin-top: 0.4rem;
+    }
+
+    .scene-card .link-inline a {
+      color: #1e3d5e;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #d0d9e0;
+    }
+
+    .scene-card .link-inline a:hover {
+      border-bottom-color: #1e3d5e;
+    }
+
+    /* 常见说明 */
+    .faq-section {
+      margin: 3rem 0 2.2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e5eaef;
+    }
+
+    .faq-section h2 {
+      font-size: 1.35rem;
+      font-weight: 450;
+      color: #14141e;
+      margin-bottom: 1.6rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.3rem;
+    }
+
+    .faq-item .q {
+      font-weight: 500;
+      color: #1e2c39;
+      margin-bottom: 0.15rem;
+      font-size: 1rem;
+    }
+
+    .faq-item .a {
+      color: #3f5261;
+      font-size: 0.93rem;
+      padding-left: 1.2rem;
+      border-left: 2px solid #d9e1e8;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+    }
+
+    .faq-item .a a {
+      color: #1e3d5e;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd5dd;
+    }
+
+    .faq-item .a a:hover {
+      border-bottom-color: #1e3d5e;
+    }
+
+    /* 尾部 */
+    .footer-note {
+      margin-top: 3.8rem;
+      font-size: 0.8rem;
+      color: #6a7b89;
+      border-top: 1px solid #eaedf0;
+      padding-top: 1.8rem;
+      text-align: left;
+      letter-spacing: 0.01em;
+    }
+
+    .footer-note a {
+      color: #3b4a58;
+      text-decoration: none;
+      border-bottom: 1px solid #d2dbe2;
+    }
+
+    .footer-note a:hover {
+      border-bottom-color: #3b4a58;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .scene-card {
+        padding: 1.3rem 1.4rem;
+      }
+
+      .top-nav {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+
+      .top-nav .bookmark-hint {
+        font-size: 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- 顶部导航 -->
+    <div class="top-nav">
+      <a href="#" class="brand">威廉希尔<span class="bookmark-hint">· 再次访问</span></a>
+      <span class="bookmark-hint">✦ 加入书签 · 持续关注</span>
+    </div>
+
+    <!-- hero 区域 -->
+    <div class="hero">
+      <h1>回到这里，继续你关注的内容</h1>
+      <p>
+        无论你是在移动端还是桌面端，<a href="https://android-williamhill.com">威廉希尔</a>始终是一个你可以稳定返回的页面。
+        这次访问之后，你可能会想把它保留在书签或收藏夹里——方便下一次直接回来。
+      </p>
+    </div>
+
+    <!-- 三个场景模块 -->
+    <div class="scenes">
+      <div class="scene-card">
+        <span class="tag">场景 1</span>
+        <h3>再次打开时，不需要重新搜索</h3>
+        <p>
+          很多时候我们浏览一个页面后，隔几天想再看一眼，却忘了入口。把当前页面收藏起来，
+          下次直接点击书签即可回到 <a href="https://android-williamhill.com">威廉希尔</a>，省去重复查找的步骤。
+        </p>
+      </div>
+
+      <div class="scene-card">
+        <span class="tag">场景 2</span>
+        <h3>跨设备同步你的关注列表</h3>
+        <p>
+          在办公室电脑上收藏了某个页面，回家用手机或平板时却要重新翻历史记录。
+          使用同一浏览器的收藏同步功能，任何设备都能直接打开你关注的页面，
+          包括 <a href="https://android-williamhill.com">威廉希尔</a>。
+        </p>
+      </div>
+
+      <div class="scene-card">
+        <span class="tag">场景 3</span>
+        <h3>持续回看，不错过更新</h3>
+        <p>
+          有些页面会定期调整内容或补充说明。如果你觉得当前内容值得保持关注，
+          不妨把 <a href="https://android-williamhill.com">威廉希尔</a> 加入收藏夹，
+          每隔一段时间回来看一眼，保持信息同步。
+        </p>
+      </div>
+    </div>
+
+    <!-- 常见说明 -->
+    <div class="faq-section">
+      <h2>一些你可能想了解的细节</h2>
+
+      <div class="faq-item">
+        <div class="q">▍ 如何快速收藏当前页面？</div>
+        <div class="a">
+          在桌面浏览器中，可以使用快捷键 Ctrl+D（Windows）或 Cmd+D（Mac）。
+          移动端浏览器通常点击地址栏旁的分享或星标图标，选择「添加到书签」或「收藏」。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="q">▍ 收藏后页面内容会变化吗？</div>
+        <div class="a">
+          页面地址不变，内容会由网站维护者进行更新。如果你收藏了
+          <a href="https://android-williamhill.com">威廉希尔</a>，
+          再次打开时看到的是最新版本，而非旧快照。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="q">▍ 在手机上如何方便地再次访问？</div>
+        <div class="a">
+          大部分手机浏览器支持将页面添加到主屏幕（iOS Safari 使用「共享→添加到主屏幕」，
+          安卓 Chrome 使用菜单「添加到主屏幕」），这样就像打开一个应用一样快速。
+        </div>
+      </div>
+    </div>
+
+    <!-- 尾部 -->
+    <div class="footer-note">
+      <p>页面内容仅供信息参考。如需直接浏览，可回到 <a href="https://android-williamhill.com">威廉希尔</a>。</p>
+      <p style="margin-top: 0.6rem;">&copy; 持续整理 · 保持关注</p>
+    </div>
+  </div>
+</body>
+</html>
